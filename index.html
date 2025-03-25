@@ -1,315 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/hero-bg.jpg" rel="apple-touch-icon" >
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-
-    <nav class="nav-menu">
-      <ul>
-        <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#cert"><i class="bx bx-book-content"></i> <span>Certifications</span></a></li>
-        <li><a href="#projects"><i class="bx bx-heart"></i> <span>Projects</span></a></li>
-        <li><a href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
-
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Kumar Aishwary</h1>
-      <p>I'm Senior Software Engineer</p>
-      <div class="social-links">
-        <a href="www.twitter.com/kraishwary" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="www.facebook.com " target="_blank"   class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="www.instagram.com/aishwary.insta" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="www.skype.com/kraishwary" target="_blank" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="www.linkedin.com/in/kraishwary" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>
-            Having 1.7 Year Experience as a Software Engineer in Developing Backend Application to support Robust API Infrastructure Development
-            Expertise in Java, Spring Boot, Postgre SQL.
-          </p>
-
-          </p>
-          <p></p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4">
-          <center>  <img src="assets/img/download.jpg"  width="200" height="40"justif class="img-fluid" alt=""></center>
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-                   <p class="font-italic">
-              Details About Me
+export default function Portfolio() {
+  return (
+    <div className="min-h-screen bg-gray-100 p-6 flex flex-col items-center">
+      <Card className="w-full max-w-4xl bg-white shadow-lg rounded-2xl p-6">
+        <CardContent>
+          <div className="text-center">
+            <h1 className="text-3xl font-bold text-gray-900">Kumar Aishwary</h1>
+            <p className="text-lg text-gray-700 mt-2">
+              Java | AI Backend Engineer | Microservices | Cloud & DevOps
             </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 16 May </li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> <a href="https://kraishwary-ise.github.io/"> Portfolio</a></li>
-
-                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +917795657785</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> City : Bangalore, IN</li>
-             <section id="resume">     <li><i class="icofont-rounded-right"></i> <strong>Resume:</strong><a href="https://github.com/kraishwary-ise/resume/raw/main/Kumar-Resume.pdf"> Download Here</a></li></section>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 24</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Bachleor</li>
-                 
-                </ul>
-              </div>
+            <div className="mt-4 flex justify-center gap-4">
+              <Button asChild>
+                <a href="mailto:kraishwary16@gmail.com"><FaEnvelope size={20} /> Email</a>
+              </Button>
+              <Button asChild variant="outline">
+                <a href="https://www.linkedin.com/in/kraishwary" target="_blank">
+                  <FaLinkedin size={20} /> LinkedIn
+                </a>
+              </Button>
+              <Button asChild variant="outline">
+                <a href="https://github.com/kraishwary-ise" target="_blank">
+                  <FaGithub size={20} /> GitHub
+                </a>
+              </Button>
             </div>
-           
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>Get overview with my skillsets.</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">Java <i class="val">87%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Kubernets <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">PSQL <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">Python <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Web Development <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Video Editing(VN)<i class="val">89%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="59" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-    <section id="projects">
-      <div class="row">
-        <div class="col-lg-4">
-          <h2>Finstagram</h2>
-          <ul>
-            <li>Build on MERN Stack</li>
-            <li><a href="https://finstagram16.herokuapp.com/login">Click Here</a></li>
-          </ul>
-          </div>
-          <div class="col-lg-4">
-           <h2> Configuration Manager</h2>
-           <ul>
-            <li>Build on Spring,Angular 7,MySql</li>
-            <li><a href="#">Click Here</a></li>
-          </ul>
-          </div>
-
-          <div class="col-lg-4">
-        <h2>    Fraulent Detector</h2>
-        <ul>
-          <li>ML Based Project</li>
-          
-          <li><a href="#">Click Here</a></li>
-        </ul>
           </div>
           
-</div>
-    </section>
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-  <section id="cert">        <h2>Certifications</h2></section>
-        <a href="/certificate/certificate.html">Click here</a>
-        </div>
-        
-        <div class="section-title">
-          <h2>Want to Connect</h2>
-        </div>
-
-        <div class="row mt-1">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Location:</h4>
-                <p>Bangalore IN</p>
-              </div>
-
-              <div class="email">
-                <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p>kraishwary16@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="icofont-phone"></i>
-                <h4>Call:</h4>
-                <p>+91 7795657785</p>
-              </div>
-
-            </div>
-
+          <div className="mt-6">
+            <h2 className="text-2xl font-semibold text-gray-900">Professional Summary</h2>
+            <p className="text-gray-700 mt-2">
+              Results-driven AI Backend Engineer with 4.7+ years of experience in
+              designing scalable, secure, and high-performance applications.
+              Expertise in Java, Microservices, Spring Boot, Cloud Computing, and DevOps.
+              Adept at AI model integration, database optimization, and cloud deployments.
+            </p>
           </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
+          
+          <div className="mt-6">
+            <h2 className="text-2xl font-semibold text-gray-900">Technical Skills</h2>
+            <ul className="text-gray-700 mt-2 list-disc list-inside">
+              <li>Programming Languages: Java, Python, JavaScript</li>
+              <li>Frameworks: Spring Boot, Microservices, RESTful APIs, Kafka, Generative AI</li>
+              <li>Cloud & DevOps: AWS, GCP, IBM Cloud, Kubernetes, Terraform, Jenkins</li>
+              <li>Databases: PostgreSQL, MySQL, MongoDB, IBM DB2, Redis</li>
+              <li>Tools: Git, JIRA, IBM MQ, JUnit, Mockito, JaCoCo, JProfiler</li>
+            </ul>
           </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-   
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+          
+          <div className="mt-6">
+            <h2 className="text-2xl font-semibold text-gray-900">Experience</h2>
+            <p className="text-gray-700 mt-2 font-bold">IBM India Software Labs (Feb 2024 - Present)</p>
+            <p className="text-gray-700">Software Engineer - IBM Sterling Supply Chain Intelligence Suite</p>
+            <ul className="text-gray-700 mt-2 list-disc list-inside">
+              <li>Developed microservices with Java, Spring Boot, and PostgreSQL.</li>
+              <li>Integrated AI models and role-based access control for security.</li>
+              <li>Implemented CI/CD pipelines with Kubernetes, Jenkins, and Docker.</li>
+            </ul>
+            
+            <p className="text-gray-700 mt-4 font-bold">Comviva Technologies (Aug 2020 - Feb 2024)</p>
+            <p className="text-gray-700">Senior Software Engineer - Mobilytix RTM</p>
+            <ul className="text-gray-700 mt-2 list-disc list-inside">
+              <li>Designed and built scalable distributed systems with a focus on security.</li>
+              <li>Developed RESTful APIs and backend services in Python.</li>
+            </ul>
+          </div>
+          
+          <div className="mt-6">
+            <h2 className="text-2xl font-semibold text-gray-900">Education</h2>
+            <p className="text-gray-700">PES Institute of Technology, Bengaluru (2016 - 2020)</p>
+            <p className="text-gray-700">Bachelor of Engineering in Information Science (CGPA: 7.4)</p>
+          </div>
+          
+          <div className="mt-6">
+            <h2 className="text-2xl font-semibold text-gray-900">Certifications</h2>
+            <ul className="text-gray-700 mt-2 list-disc list-inside">
+              <li>AWS Certified Solutions Architect - Associate</li>
+              <li>IBM AI Engineering Certification</li>
+              <li>Red Hat Certified Engineer (RHCE)</li>
+            </ul>
+          </div>
+          
+          <div className="mt-6">
+            <h2 className="text-2xl font-semibold text-gray-900">Projects</h2>
+            <p className="text-gray-700 font-bold">Fraudulent Click-Ad Detection using ML</p>
+            <p className="text-gray-700">Developed an ML model to detect fraudulent ad clicks, reducing false positives by 40%.</p>
+            
+            <p className="text-gray-700 font-bold mt-2">Dishyam - Location Monitoring Tool</p>
+            <p className="text-gray-700">Created a web app for tracking and accident detection with real-time alerts.</p>
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+  );
+}
